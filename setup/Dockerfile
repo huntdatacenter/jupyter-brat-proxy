@@ -7,8 +7,7 @@ FROM jupyter/minimal-notebook:lab-3.6.1
 
 # setup package, enable classic extension, build lab extension
 # USER "${NB_USER}"
-RUN mamba install -q -c conda-forge -y gunicorn
-# simple-websocket
+# RUN mamba install -q -c conda-forge -y gunicorn
 RUN fix-permissions /opt/conda
 
 WORKDIR "${HOME}/jupyter-brat-proxy"
