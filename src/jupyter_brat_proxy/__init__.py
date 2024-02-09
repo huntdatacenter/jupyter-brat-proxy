@@ -5,7 +5,7 @@ import pwd
 import getpass
 
 logging.basicConfig(level="INFO")
-log = logging.getLogger("jupyter-example-proxy")
+log = logging.getLogger("jupyter-brat-proxy")
 log.setLevel("INFO")
 
 APP_TITLE = "BRAT_APP"
@@ -35,8 +35,9 @@ def _get_env(port, base_url):
     """
 
     return {
-        "FLASK_RUN_PORT": str(port),
-        "FLASK_APP_URL_PREFIX": f"{base_url}{APP_NAME}",
+        # "FLASK_RUN_PORT": str(port),
+        # "FLASK_APP_URL_PREFIX": f"{base_url}{APP_NAME}",
+        "BRAT_AUTH_ENABLED": "false",
     }
 
 
@@ -82,13 +83,12 @@ def run_app():
     log.debug(f"[{user}] Icon_path:  {icon_path}")
     log.debug(f"[{user}] Launch Command: {executable_name}")
     return {
-        # https://flask.palletsprojects.com/en/3.0.x/deploying/gunicorn/#async-with-gevent-or-eventlet
         "command": [
-            "brat", "-w", "4", "WSGI_APP", f"--bind={host}:{port}",
+            "brat", f"{port}",
         ],
         "timeout": _get_timeout(),
         "environment": _get_env,
-        "absolute_url": True,
+        "absolute_url": False,
         # "rewrite_response": rewrite_netloc,
         "launcher_entry": {
             "title": APP_TITLE,
