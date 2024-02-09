@@ -43,7 +43,7 @@ def _get_env(port, base_url):
 
 def get_icon_path():
     return os.path.join(
-        os.path.dirname(os.path.abspath(__file__)), "app-icon.svg"
+        os.path.dirname(os.path.abspath(__file__)), "brat_favicon.svg"
     )
 
 
