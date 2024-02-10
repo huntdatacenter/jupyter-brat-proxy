@@ -2,11 +2,7 @@
 
 ## Jupyter proxy
 
-Proxy extension that provides Icon and starting instructions for you web application:
-
-```
-src/jupyter_brat_proxy
-```
+Proxy extension that provides BRAT rapid annotation tool using [bratserver wrapper](https://pypi.org/project/bratserver/) in your Jupyterlab environment.
 
 ## Development
 
