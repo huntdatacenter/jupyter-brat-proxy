@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
 
     environment:
-      name: stable
+      name: pypi
       url: https://pypi.org/p/jupyter-brat-proxy
 
     permissions:
