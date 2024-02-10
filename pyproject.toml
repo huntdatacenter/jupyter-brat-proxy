@@ -8,6 +8,7 @@ version = "0.0.1"
 authors = [
   { name="Matus Kosut", email="matus.kosut@ntnu.no" },
   { name="Melissa Yan", email="melissa.yan@ntnu.no" },
+  { name="HUNT Cloud", email="cloud@hunt.ntnu.no" },
 ]
 description = "BRAT jupyter server proxy"
 readme = "README.md"
