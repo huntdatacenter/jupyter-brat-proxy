@@ -1,5 +1,7 @@
 # jupyter-brat-proxy
 
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/jupyter-brat-proxy.svg)](https://pypi.org/project/jupyter-brat-proxy/)
+
 ## Jupyter proxy
 
 Proxy extension that provides BRAT rapid annotation tool using [bratserver wrapper](https://pypi.org/project/bratserver/) in your Jupyterlab environment.
