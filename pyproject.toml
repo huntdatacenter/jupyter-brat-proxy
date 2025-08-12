@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "jupyter-brat-proxy"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
   { name="Matus Kosut", email="matus.kosut@ntnu.no" },
   { name="Melissa Yan", email="melissa.yan@ntnu.no" },
@@ -15,7 +15,7 @@ readme = "README.md"
 license = { file = "LICENSE.md" }
 requires-python = ">=3.8"
 dependencies = [
-    "jupyter-server-proxy>=3.2.2,<4.0.0",
+    "jupyter-server-proxy",
     "bratserver==0.0.1",
 ]
 classifiers = [
@@ -28,6 +28,9 @@ classifiers = [
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
 ]
 keywords = [
     "Jupyter Proxy",
